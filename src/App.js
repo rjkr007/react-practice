@@ -8,7 +8,8 @@ export default function Card() {
     foodType: "Spinach",
     age: 44,
     likes: "Sailing the seas of React!",
-    twitterUsername: "https://twitter.com/popeyethesailor",
+    twitterUsername: "popeyeTheSailor",
+    twitterLink: "https://twitter.com/popeyethesailor",
     avatar:
       "https://www.denofgeek.com/wp-content/uploads/2020/05/Popeye-Spinach-1.jpg?resize=768%2C432",
   };
@@ -26,7 +27,10 @@ export default function Card() {
           <p> Age : {popeye.age}</p>
           <p>Food type: {popeye.foodType}</p>
           <p>Likes: {popeye.likes}</p>
-          <p>Twitter: {popeye.twitterUsername}</p>
+          <p>
+            Twitter:{" "}
+            <a href={popeye.twitterLink}>{popeye.twitterUsername}</a>
+          </p>
         </div>
       </div>
       <Count />
