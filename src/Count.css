@@ -6,7 +6,9 @@
   text-align: center;
   color: rgb(202, 154, 195);
 }
-
+.head {
+  color: rgb(247, 238, 238);
+}
 .count {
   background: none;
   color: #ccbcb0;
@@ -18,13 +20,12 @@
   margin-top: 0.7rem;
   text-align: center;
   border-radius: 10px;
-}
+ }
 /* styling buttons */
 .count,
 .reset {
   outline: none;
-  cursor: pointer;
-  text-align: center;
+   text-align: center;
 }
 .count:hover {
   border-color: #8aff5c;
@@ -62,9 +63,13 @@
   border-radius: 10px;
 }
 .countDisplay {
-  columns: 3 auto;
-  font-family: "Roboto Slab", serif;
+   font-family: "Roboto Slab", serif;
   text-align: center;
   height: 25vh;
   background-color: #151b29;
+  margin-top: 10rem;
+}
+
+.footer {
+ color: rgb(247, 238, 238);
 }
