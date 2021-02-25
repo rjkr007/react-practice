@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./Count.css";
+import Count from "./Count";
 
-function App() {
+export default function Card() {
+  const popeye = {
+    name: "Popeye the Sailor",
+    location: "Las Vegas",
+    foodType: "Spinach",
+    age: 44,
+    likes: "Sailing the seas of React!",
+    twitterUsername: "https://twitter.com/popeyethesailor",
+    avatar:
+      "https://www.denofgeek.com/wp-content/uploads/2020/05/Popeye-Spinach-1.jpg?resize=768%2C432",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="profileCard">
+        <div className="imagePopeye">
+          <img src={popeye.avatar} alt="Popeye" />
+        </div>
+
+        <div className="profileData">
+          <p className="fullName"> {popeye.name}</p>
+          <p>Location : {popeye.location}</p>
+          <p> Age : {popeye.age}</p>
+          <p>Food type: {popeye.foodType}</p>
+          <p>Likes: {popeye.likes}</p>
+          <p>Twitter: {popeye.twitterUsername}</p>
+        </div>
+      </div>
+      <Count />
     </div>
   );
 }
-
-export default App;
