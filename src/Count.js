@@ -12,7 +12,8 @@ export default function App() {
   return (
     <div className="countDisplay">
       <header className="App">
-        {<h1 className="head">Counter</h1>}
+        <h1 className="head1">React Practice</h1>
+        <h2 className="head">1. Counter</h2>
         <button className="count" onClick={addCount}>
           Add
         </button>
@@ -20,13 +21,12 @@ export default function App() {
         <button className="reset" onClick={resetCount}>
           Reset
         </button>
-        
-        <footer>
+
+        {/* <footer>
           <div className="footer">
             <p>©2021 Copyright Rajeev KUMAR</p>
           </div>
-        </footer>
-       
+        </footer> */}
       </header>
     </div>
   );

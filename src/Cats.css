@@ -1,0 +1,58 @@
+.catsDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7.5rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  margin: 2rem;
+  background-color: #474743;
+  height: 5rem;
+  border-radius: 10px;
+}
+
+.boxes {
+  background: none;
+  color: rgb(247, 238, 238);
+  border-color: #f6f0ec;
+  border: 2px solid;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 0.2rem;
+  /* background-color: rgba(245, 245, 245, 0.603); */
+  cursor: pointer;
+}
+
+.hats {
+  background: none;
+  color: rgb(247, 238, 238);
+  border-color: #f6f0ec;
+  border: 2px solid;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.clothes {
+  background: none;
+  color: rgb(247, 238, 238);
+  border-color: #f6f0ec;
+  border: 2px solid;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}

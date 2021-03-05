@@ -8,10 +8,17 @@
 }
 .head {
   color: rgb(247, 238, 238);
+ }
+
+.head1 {
+  color: rgb(247, 238, 238);
+  padding-top: 0.5rem;
+  font-size: 3.5rem;
+  font-weight: bolder;
 }
 .count {
   background: none;
-  color: #ccbcb0;
+  color: rgb(247, 238, 238);
   border-color: #f6f0ec;
   border: 2px solid;
   padding: 0.5em 0.5em;
@@ -35,7 +42,7 @@
 }
 .reset {
   background: none;
-  color: #ccbcb0;
+  color: rgb(247, 238, 238);
   border-color: #f6f0ec;
   border: 2px solid;
   padding: 0.5em 0.5em;
@@ -65,11 +72,21 @@
 .countDisplay {
    font-family: "Roboto Slab", serif;
   text-align: center;
-  height: 25vh;
-  background-color: #151b29;
-  margin-top: 10rem;
+  height: 30vh;
+  background-color: #474743;
+  /* margin-top: 10rem; */
 }
 
 .footer {
- color: rgb(247, 238, 238);
+display: flex;
+align-items: center;
+justify-content: center;
+ color: rgb(14, 13, 13);
+ margin-bottom: 1rem;
+ font-weight: bold;
+ margin-top: 7.5rem;
+}
+
+h2{
+  margin-top: 1.5rem;
 }

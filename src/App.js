@@ -1,5 +1,7 @@
 import "./Count.css";
 import Count from "./Count";
+import Cats from "./Cats";
+import Catss from "./Catss";
 
 export default function Card() {
   const popeye = {
@@ -15,25 +17,35 @@ export default function Card() {
   };
 
   return (
-    <div className="container">
-      <div className="profileCard">
-        <div className="imagePopeye">
-          <img src={popeye.avatar} alt="Popeye" />
-        </div>
+    <div>
+      <Count />
+      <div className="container">
+        <h1 className="popeya">2. Popeya the Sailor</h1>
+        <div className="profileCard">
+          <div className="imagePopeye">
+            <img src={popeye.avatar} alt="Popeye" />
+          </div>
 
-        <div className="profileData">
-          <p className="fullName"> {popeye.name}</p>
-          <p>Location : {popeye.location}</p>
-          <p> Age : {popeye.age}</p>
-          <p>Food type: {popeye.foodType}</p>
-          <p>Likes: {popeye.likes}</p>
-          <p>
-            Twitter:{" "}
-            <a href={popeye.twitterLink}>{popeye.twitterUsername}</a>
-          </p>
+          <div className="profileData">
+            <p className="fullName"> {popeye.name}</p>
+            <p>Location : {popeye.location}</p>
+            <p> Age : {popeye.age}</p>
+            <p>Food type: {popeye.foodType}</p>
+            <p>Likes: {popeye.likes}</p>
+            <p>
+              Twitter: <a href={popeye.twitterLink}>{popeye.twitterUsername}</a>
+            </p>
+          </div>
         </div>
       </div>
-      <Count />
+      <Cats />
+      <Catss />
+
+      <footer>
+        <div className="footer">
+          <p>©2021 Copyright Rajeev KUMAR</p>
+        </div>
+      </footer>
     </div>
   );
 }
