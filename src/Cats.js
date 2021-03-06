@@ -4,7 +4,7 @@ import "./Cats.css";
 
 function Cats() {
   const [posts, setPost] = useState([]);
-  const [id, setId] = useState();
+  const [id, setId] = useState('');
 
   const handleClick = (event) => {
     if (event.target.className === "hats") {
@@ -26,14 +26,14 @@ function Cats() {
       // console.log("Clicked", event.target.textContent);
       setId(2);
       // console.log(id);
-    }
+    } 
   };
 
   useEffect(() => {
     axios
       //   .get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
       .get(
-        `https://api.thecatapi.com/v1/images/search?limit=6&category_ids=${id}`
+        `https://api.thecatapi.com/v1/images/search?limit=5&category_ids=${id}`
       )
       .then((res) => {
         console.log(res);
@@ -47,7 +47,14 @@ function Cats() {
   return (
     <div className="catsDisplay">
       <header className="Cat">
-        <h1 className="cats">3. Welcome to CATS WEB!</h1>
+        <div className="cats">
+          <h1>😽😼🙀😿😾 3.Welcome to CATS WEB! 😹😻😺😸🐱</h1>
+        </div>
+        <h2 className="cats">
+          ✨✨✨✨✨ How beautiful 🎇 , Enjoy more images , 🎇 just a click away on
+          links below- ✨✨✨✨✨
+        </h2>
+
         <div className="box">
           <button type="button" className="boxes" onClick={handleClick}>
             Boxes
@@ -66,10 +73,10 @@ function Cats() {
             Clothes
           </button>
         </div>
-        <ul>
+        <ul className="list">
           {posts.map((post) => (
             <li key={post.id}>
-              {post.title}
+              {/* {post.title} */}
               <img className="post" src={post.url} alt="Cat" />
             </li>
           ))}
