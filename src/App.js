@@ -1,7 +1,7 @@
 import "./Count.css";
 import Count from "./Count";
 import Cats from "./Cats";
-import Catss from "./Catss";
+// import Catss from "./Catss";
 
 export default function Card() {
   const popeye = {
@@ -39,7 +39,7 @@ export default function Card() {
         </div>
       </div>
       <Cats />
-      <Catss />
+      {/* <Catss /> */}
 
       <footer>
         <div className="footer">

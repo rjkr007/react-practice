@@ -14,30 +14,10 @@
   background-color: #474743;
   height: 5rem;
   border-radius: 10px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.boxes {
-  background: none;
-  color: rgb(247, 238, 238);
-  border-color: #f6f0ec;
-  border: 2px solid;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  padding: 0.2rem;
-  /* background-color: rgba(245, 245, 245, 0.603); */
-  cursor: pointer;
-}
-
-.hats {
-  background: none;
-  color: rgb(247, 238, 238);
-  border-color: #f6f0ec;
-  border: 2px solid;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  padding: 0.2rem;
-  cursor: pointer;
-}
 
 .clothes {
   background: none;
@@ -48,6 +28,19 @@
   border-radius: 10px;
   padding: 0.2rem;
   cursor: pointer;
+}
+
+.sinks,
+.space, .hats, .boxes {
+  background: none;
+  color: rgb(247, 238, 238);
+  border-color: #f6f0ec;
+  border: 2px solid;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 0.2rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
 }
 
 .post {

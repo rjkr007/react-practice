@@ -8,7 +8,8 @@ const Catss = () => {
   const [clothes, setClothes] = useState([]);
 
   const fetchData = () => {
-    const boxes = "https://api.thecatapi.com/v1/images/search?category_ids=5";
+    const boxes =
+      "https://api.thecatapi.com/v1/images/search?limit=6&category_ids=5";
     const hats =
       "https://api.thecatapi.com/v1/images/search?limit=6&category_ids=1";
     const clothes =
@@ -27,15 +28,9 @@ const Catss = () => {
         setHats(allHats);
         setClothes(allClothes);
 
-
-
-
       })
     );
   };
-
-
-
 
   useEffect(() => {
     fetchData();
@@ -50,8 +45,7 @@ const Catss = () => {
         // console.log("Clicked", event.target.textContent);
         number = id[0];
         console.log(number);
-       fetchData.boxes = "https://api.thecatapi.com/v1/images/search?category_ids=1";
-      } else if (event.target.className === "boxes") {
+             } else if (event.target.className === "boxes") {
         // console.log("Clicked", event.target.textContent);
         number = id[1];
         console.log(number);

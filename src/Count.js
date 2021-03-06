@@ -22,11 +22,7 @@ export default function App() {
           Reset
         </button>
 
-        {/* <footer>
-          <div className="footer">
-            <p>©2021 Copyright Rajeev KUMAR</p>
-          </div>
-        </footer> */}
+        
       </header>
     </div>
   );
