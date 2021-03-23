@@ -1,6 +1,9 @@
 import "./Count.css";
 import Count from "./Count";
 import Cats from "./Cats";
+import Colorpicker from "./Colorpicker";
+import Dropdown from "./Dropdown";
+// import Clock from "./Clock";
 // import Catss from "./Catss";
 
 export default function Card() {
@@ -19,6 +22,7 @@ export default function Card() {
   return (
     <div>
       <Count />
+      {/* <Clock /> */}
       <div className="container">
         <h1 className="popeya">2. Popeya the Sailor</h1>
         <div className="profileCard">
@@ -39,8 +43,9 @@ export default function Card() {
         </div>
       </div>
       <Cats />
+      <Colorpicker />
+      <Dropdown />
       {/* <Catss /> */}
-
       <footer>
         <div className="footer">
           <p>©2021 Copyright Rajeev KUMAR</p>

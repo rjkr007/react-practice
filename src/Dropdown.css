@@ -1,0 +1,27 @@
+.drop {
+  display: flex;
+  height: 1vh;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.drop1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+.drop2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.drop3 {
+  border: 5px solid rgb(138, 133, 133);
+  border-radius: 10px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 7.5rem;
+}

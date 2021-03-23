@@ -24,7 +24,6 @@
   padding-right: 0.5rem;
 }
 
-
 .clothes {
   background: none;
   color: rgb(247, 238, 238);
@@ -37,7 +36,9 @@
 }
 
 .sinks,
-.space, .hats, .boxes {
+.space,
+.hats,
+.boxes {
   background: none;
   color: rgb(247, 238, 238);
   border-color: #f6f0ec;
@@ -62,6 +63,7 @@ img {
   justify-content: center;
   height: 18rem;
   width: 18rem;
+  border-radius: 7.5px;
 }
 
 .list {
